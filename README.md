@@ -1,10 +1,12 @@
 # MagTroGames
-Source code for a Space Invader-ish game that uses magnets to control
+Source code for a Space Invader-ish game that uses magnets to control.
+
+![alt text](https://github.com/thisisvictor/MagTroGames/blob/master/InputMethods_zoom.png "3 different ways to play")
 
 ## Intro
 Hello thanks for your interest in this project. The code you see here is the source code of the app I used for my study on Tangible Around-Device Interaction using a magnetic ring. It is made available because 1) a reviewer of the corresponding paper requested it, and 2) I do want to share it so that you can build your own app using this neat idea.
 
-Details of the study can be found in the paper I'm publishing (link available later).
+Details of the study can be found in the paper I'll be publishing (link available later).
 
 ## Interface
 Since the app was designed to be used in a study, which was a 3 x 2 factorial design, when you start the app you'll see 3 buttons (Touch, Tilt, Magnetism), and an extra one (Linear/Angular). They are for different forms of inputs and mapping schemes.
@@ -16,10 +18,10 @@ The app is a simple game based on Space Invader, where the player moves a canon 
 
 To make it work for a formal study, I've made several modifications to the game:
 
-*Smaller number of aliens so it takes less time to finish;
-*Absence of elements such as defense bunkers and the "mysterious ship" to remove any randomization of game objects for consistent measurements across sessions;
-*Inputs are for moving the canon only, which automatically shoots the lasers instead of requiring a separate input;
-*Vertical movement of the aliens switches between upward and downward within 75% the screen, instead of always downward, so they are always in range and the player will always be able to defeat all of them without a time limit.
+* Smaller number of aliens so it takes less time to finish;
+* Absence of elements such as defense bunkers and the "mysterious ship" to remove any randomization of game objects for consistent measurements across sessions;
+* Inputs are for moving the canon only, which automatically shoots the lasers instead of requiring a separate input;
+* Vertical movement of the aliens switches between upward and downward within 75% the screen, instead of always downward, so they are always in range and the player will always be able to defeat all of them without a time limit.
 
 So don't feel strange if it doesn't play the same way you expected :)
 
@@ -34,3 +36,6 @@ angle = Mathf.Atan2 (magValue.y, magValue.x) * Mathf.Rad2Deg; //[-180, 180]
 ```
 
 Note how I only need to use the x- and y-axis values to calculate the angle. This corresponds to the way the game is played using the magnetic ring: you place the ring (diametrically magnetized) on the same plane as the mobile device, and rotate it.
+
+![alt text](https://github.com/thisisvictor/MagTroGames/blob/master/MagnetFieldXYZ.png "placement of the ring and the device")
+
