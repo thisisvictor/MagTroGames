@@ -8,6 +8,8 @@ Hello thanks for your interest in this project. The code you see here is the sou
 
 Details of the study can be found in the paper I'll be publishing (link available later).
 
+A video of the project can be found here: https://youtu.be/oGJstblyvII
+
 ## Interface
 Since the app was designed to be used in a study, which was a 3 x 2 factorial design, when you start the app you'll see 3 buttons (Touch, Tilt, Magnetism), and an extra one (Linear/Angular). They are for different forms of inputs and mapping schemes.
 
@@ -38,4 +40,7 @@ angle = Mathf.Atan2 (magValue.y, magValue.x) * Mathf.Rad2Deg; //[-180, 180]
 Note how I only need to use the x- and y-axis values to calculate the angle. This corresponds to the way the game is played using the magnetic ring: you place the ring (diametrically magnetized) on the same plane as the mobile device, and rotate it.
 
 ![alt text](https://github.com/thisisvictor/MagTroGames/blob/master/MagnetFieldXYZ.png "placement of the ring and the device")
+
+## Conclusion
+That's basically it! Feel free to try it out, modify, and even make your own game.
 
